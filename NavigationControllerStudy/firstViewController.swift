@@ -23,9 +23,11 @@ class FirstViewController: UIViewController {
     }
 
     override func loadView() {
+        super.loadView()
         view = firstView
     }
 
+    // MARK:- FirstView Button Event
     @objc func firstButtonPressed(_: UIButton) {
         print("pushViewController -> secondView")
         let secondViewController = SecondViewController()

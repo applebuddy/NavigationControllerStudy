@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: firstViewController)
         navigationController.navigationItem.title = "네이게이션 타이틀"
         window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
         return true
     }
 }
