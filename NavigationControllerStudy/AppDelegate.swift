@@ -12,14 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        return true
+    }
+    
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let firstViewController = FirstViewController()
         let navigationController = UINavigationController(rootViewController: firstViewController)
         navigationController.navigationItem.title = "네이게이션 타이틀"
         window?.rootViewController = navigationController
-//        window?.makeKeyAndVisible()
+         window?.makeKeyAndVisible()
+        
+        
         return true
     }
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
     let firstView: FirstView = {
         let firstView = FirstView()
         return firstView
@@ -17,6 +18,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         title = "FirstViewController"
         firstView.firstButton.addTarget(self, action: #selector(firstButtonPressed(_:)), for: .touchUpInside)
         firstView.secondButton.addTarget(self, action: #selector(secondButtonPressed(_:)), for: .touchUpInside)
@@ -29,13 +31,13 @@ class FirstViewController: UIViewController {
 
     // MARK:- FirstView Button Event
     @objc func firstButtonPressed(_: UIButton) {
-        print("pushViewController -> secondView")
+        print("pushViewController -> secondViewController")
         let secondViewController = SecondViewController()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
 
     @objc func secondButtonPressed(_: UIButton) {
-        print("pushViewController -> thirdView")
+        print("pushViewController -> thirdViewController")
         let thirdViewController = ThirdViewController()
         navigationController?.pushViewController(thirdViewController, animated: true)
     }

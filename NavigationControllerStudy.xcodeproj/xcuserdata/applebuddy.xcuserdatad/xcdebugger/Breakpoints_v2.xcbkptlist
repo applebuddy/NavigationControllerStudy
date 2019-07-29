@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NavigationControllerStudy/firstViewController.swift"
-            timestampString = "586024469.004537"
+            timestampString = "586084012.144679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>

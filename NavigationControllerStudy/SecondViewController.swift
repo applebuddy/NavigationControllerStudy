@@ -28,13 +28,13 @@ class SecondViewController: UIViewController {
 
     // MARK- SecondView Button Event
     @objc func firstButtonPressed(_: UIButton) {
-        print("pushViewController -> thirdView")
+        print("pushViewController -> thirdViewController")
         let thirdViewController = ThirdViewController()
         navigationController?.pushViewController(thirdViewController, animated: true)
     }
 
     @objc func secondButtonPressed(_: UIButton) {
-        print("popViewController -> firstView")
+        print("popViewController -> firstViewController")
         navigationController?.popViewController(animated: true)
     }
 }

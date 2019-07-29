@@ -9,6 +9,8 @@
 import UIKit
 
 class FirstView: UIView {
+    
+    // MARK:- UIs
     let firstButton: UIButton = {
         let firstButton = UIButton()
         firstButton.setTitle("Go to SecondView", for: .normal)
@@ -46,7 +48,7 @@ class FirstView: UIView {
     func makeConstraint() {
         firstButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            firstButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            firstButton.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             firstButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0),
             firstButton.widthAnchor.constraint(equalTo: widthAnchor, constant: 0),
             firstButton.heightAnchor.constraint(equalToConstant: 100),
