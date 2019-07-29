@@ -9,8 +9,8 @@
 import UIKit
 
 class FirstView: UIView {
-    
-    // MARK:- UIs
+    // MARK: - UIs
+
     let firstButton: UIButton = {
         let firstButton = UIButton()
         firstButton.setTitle("Go to SecondView", for: .normal)

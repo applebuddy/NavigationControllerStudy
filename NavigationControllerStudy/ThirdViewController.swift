@@ -26,7 +26,8 @@ class ThirdViewController: UIViewController {
         view = thirdView
     }
 
-    // MARK:- ThirdView Button Event
+    // MARK: - ThirdView Button Event
+
     @objc func firstButtonPressed(_: UIButton) {
         print("popToViewController -> viewControllers[0]")
         guard let secondViewController = self.navigationController?.viewControllers[0] else { return }
